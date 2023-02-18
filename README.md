@@ -1,3 +1,3 @@
-# resume_latex
-[View online](https://github.com/olbask/resume_latex/)
+# CV
+[View online](https://olbask.github.io/cv/)
  
