@@ -20,8 +20,9 @@ jobs:
       - run: mkdir output && cp ./oleg_baskaev_cv.pdf index.html pdf.js output/
       - run: |
           echo $PATH
-          echo ls
-          cp -R pdf.js/ output/pdf.js/
+          ls
+          mkdir output/pdf.js/
+          cp pdf.js/ output/pdf.js/
       - name: Commit to repository
         uses: JamesIves/github-pages-deploy-action@v4
         with:
