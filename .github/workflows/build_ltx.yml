@@ -17,7 +17,7 @@ jobs:
         with:
           name: PDF
           path: oleg_baskaev_cv.pdf
-      - run: mkdir output && cp ./oleg_baskaev_cv.pdf index.html pdf.js output/
+      - run: mkdir output && cp -r ./oleg_baskaev_cv.pdf index.html pdf.js output/
       - name: Commit to repository
         uses: JamesIves/github-pages-deploy-action@v4
         with:
