@@ -1,5 +1,7 @@
 name: Build LaTeX document
 on: [push]
+permissions:
+  contents: write
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -14,4 +16,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: oleg_baskaev_cv.pdf
+          path: ./cv/oleg_baskaev_cv.pdf
+      - name: Commit to repository
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: cv
