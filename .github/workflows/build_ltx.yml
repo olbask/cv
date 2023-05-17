@@ -19,5 +19,3 @@ jobs:
           path: oleg_baskaev_cv.pdf
       - name: Commit to repository
         uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: cv
